@@ -8,7 +8,7 @@ function App() {
   const [dob, setDob] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:5000/')
+    fetch('https://horospokus-production.up.railway.app/')
       .then(res => res.text())
       .then(data => setMessage(data));
   }, []);
